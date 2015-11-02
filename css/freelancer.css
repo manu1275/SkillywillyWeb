@@ -1,0 +1,715 @@
+/*!
+ * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@font-face {font-family: 'HelveticaNeueLight';src: url('../fonts/HelveticaNeue-Light.eot');src: url('../fonts/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-Light.woff') format('woff'),url('../fonts/HelveticaNeue-Light.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeue';src: url('../fonts/HelveticaNeue.eot');src: url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue.woff') format('woff'),url('../fonts/HelveticaNeue.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueBold';src: url('../fonts/HelveticaNeue-Bold.eot');src: url('../fonts/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-Bold.woff') format('woff'),url('../fonts/HelveticaNeue-Bold.ttf') format('truetype');}
+@font-face {font-family: 'HelveticaNeueUltraLight';src: url('../fonts/HelveticaNeue-UltraLight.eot');src: url('../fonts/HelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),url('../fonts/HelveticaNeue-UltraLight.woff') format('woff'),url('../fonts/HelveticaNeue-UltraLight.ttf') format('truetype');}
+@font-face {font-family: 'WolfintheCityLight';src: url('../fonts/WolfintheCityLight.eot');src: url('../fonts/WolfintheCityLight.eot?#iefix') format('embedded-opentype'),url('../fonts/WolfintheCityLight.woff') format('woff'),url('../fonts/WolfintheCityLight.ttf') format('truetype');}
+
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+p {
+    font-size: 20px;
+}
+
+p.small {
+    font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: 0;
+    color: #18bc9c;
+}
+
+hr.star-light,
+hr.star-primary {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 5px;
+    text-align: center;
+}
+
+hr.star-light:after,
+hr.star-primary:after {
+    content: "\f005";
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    padding: 0 .25em;
+    font-family: FontAwesome;
+    font-size: 2em;
+}
+
+hr.star-light {
+    border-color: #fff;
+}
+
+hr.star-light:after {
+    color: #fff;
+    background-color: #18bc9c;
+}
+
+hr.star-primary {
+    border-color: #2c3e50;
+}
+
+hr.star-primary:after {
+    color: #2c3e50;
+    background-color: #fff;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background: url(../img/header.png) no-repeat;
+}
+
+header h1{
+    margin-bottom: 50px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+header .intro-text {
+    display: block;
+    font-family: "HelveticaNeueUltraLight",Helvetica,Arial,sans-serif;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 10px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+.navbar a:focus {
+    outline: 0;
+}
+
+.navbar .navbar-nav {
+    letter-spacing: 1px;
+}
+
+.navbar .navbar-nav li a:focus {
+    outline: 0;
+}
+
+.navbar-default,
+.navbar-inverse {
+    border: 0;
+}
+
+h2 span {
+    font-family: "WolfintheCityLight";
+    font-size: 68px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+section h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+section.success {
+    color: #fff;
+    background: #464646;
+    font-family: "HelveticaNeueLight";
+    padding: 50px 0;
+}
+
+section.success h2{
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+section.success h3{
+    font-size: 30px;
+    color: #ffd61a;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "HelveticaNeueLight";
+}
+
+section.success p{
+    text-align: center;
+    font-size: 18px;
+}
+
+section.success hr {
+    width: 16%;
+}
+
+section.success a,
+section.success a:hover,
+section.success a:focus,
+section.success a:active,
+section.success a.active {
+    outline: 0;
+    color: #2c3e50;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+    section.success {
+        padding: 75px 0;
+    }
+
+    section.success h3{
+        font-size: 37px;
+    }
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(24,188,156,.9);
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -12px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+    margin-top: -12px;
+}
+
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h3,
+#portfolio .portfolio-item .portfolio-link .caption .caption-content h4 {
+    margin: 0;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+@media(min-width:767px) {
+    #portfolio .portfolio-item {
+        margin: 0 10px 30px 0;
+        width: 32%;
+    }
+    section.success p {
+        font-size: 20px;
+    }
+    section.success h2{
+        font-size: 40px;
+    }
+    h2 span {
+        font-size: 83px;
+    }
+}
+
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #18bc9c;
+    background: #fff;
+}
+
+.floating-label-form-group {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #ffd61a;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+    z-index: 1;
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 1.5em;
+    background: 0 0;
+    box-shadow: none!important;
+    resize: none;
+}
+
+.floating-label-form-group textarea {
+    padding-bottom: 0;
+}
+
+.floating-label-form-group label {
+    display: block;
+    z-index: 0;
+    position: relative;
+    top: 2em;
+    margin: 0;
+    font-size: .85em;
+    line-height: 1.764705882em;
+    vertical-align: middle;
+    vertical-align: baseline;
+    opacity: 0;
+    -webkit-transition: top .3s ease,opacity .3s ease;
+    -moz-transition: top .3s ease,opacity .3s ease;
+    -ms-transition: top .3s ease,opacity .3s ease;
+    transition: top .3s ease,opacity .3s ease;
+}
+
+.floating-label-form-group::not(:first-child) {
+    padding-left: 14px;
+    border-left: 1px solid #eee;
+}
+
+.floating-label-form-group-with-value label {
+    top: 0;
+    opacity: 1;
+}
+
+.floating-label-form-group-with-focus label {
+    color: #18bc9c;
+}
+
+footer {
+    color: #fff;
+}
+
+footer h2 {
+    margin-bottom: 30px;
+    font-family: "HelveticaNeueLight";
+    font-size: 34px;
+    color: #464646;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #ffd61a;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}
+
+.scroll-top {
+    z-index: 1049;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.scroll-top .btn:focus {
+    outline: 0;
+}
+
+.portfolio-modal .modal-content {
+    padding: 100px 0;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.portfolio-modal .modal-content img {
+    margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content .item-details {
+    margin: 30px 0;
+}
+
+.portfolio-modal .close-modal {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 75px;
+    margin-left: 35px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 75px;
+    background-color: #2c3e50;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
+header .intro-text:first-child {
+    padding-bottom: 30px;
+}
+
+.portfolio-item {
+    min-height: 270px;
+}
+
+.About-cnt-center {
+    margin-top: 30px;
+}
+.About-cnt-center p {
+    font-size: 20px;
+}
+
+.chinese-prov {
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+    font-family: "HelveticaNeueLight";
+}
+
+.input-items button, .input-items button:hover, .input-items button:focus, .input-items button:active{
+    border-radius: initial;
+    border: none;
+    font-family: "HelveticaNeueLight";
+    font-size: 20px;
+    background-color: #18bcae;
+    color: #fff;
+    padding: 11px 35px;
+    margin-left: 10px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+.input-items input {
+    display: inline-block;
+    border-radius: initial;
+    border: none;
+    font-family: "HelveticaNeueLight";
+    font-size: 20px;
+}
+
+#searchLocations{
+    width: 100%;
+    background: url("../img/location.png")no-repeat left;
+    padding-left: 40px;
+    padding-right: 15px;
+    margin-left: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#searchCourses{
+    width: 98%;
+    background: url("../img/search.png")no-repeat left;
+    padding-left: 40px;
+    margin-left: 15px;
+}
+
+.white-bg {
+    display: inline-block;
+    background-color: white;
+    padding: 8px 6px;
+    text-align: initial;
+    width: 100%;
+}
+
+.header-desc p {
+    font-size: 16px;
+    font-family: "HelveticaNeue";
+    margin: 35px auto 50px;
+    width: 80%;
+}
+
+#portfolio {
+    padding: 30px 0;
+}
+
+.use-skillywilly {
+    font-size: 34px;
+    font-family: "HelveticaNeueLight";
+    margin-bottom: 30px;
+}
+
+.discover-skill {
+    background: url("../img/discover.png") no-repeat;
+    background-size: cover;
+}
+
+.choose-inst {
+    background: url("../img/instructor.png") no-repeat;
+    background-size: cover;
+}
+
+.deals {
+    background: url("../img/deal.png") no-repeat;
+    background-size: cover;
+    font-family: "HelveticaNeue";
+}
+
+.deals h3 {
+    font-size: 30px;
+    text-transform: uppercase; 
+    margin: 0;
+    padding: 35px 0;
+}
+
+.deals p {
+    font-size: 16px;
+
+}
+
+.discover-skill h3, .choose-inst h3 {
+    font-family: "HelveticaNeueBold";
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.discover-skill h3 {
+    width: 45%;
+}
+.contact {
+    padding: 75px 0;
+}
+
+.contact h2 {
+    font-family: "HelveticaNeueLight";
+    font-size: 34px;
+    color: #18bcae;
+    margin-bottom: 50px;
+}
+
+#contactForm .input-items {
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+@media(min-width:767px) {
+
+    .contact h2, footer h2{
+        font-size: 40px;
+    }
+
+    #portfolio {
+        padding: 75px 0;
+    }
+    .discover-skill h3, .choose-inst h3 {
+        font-size: 26px;
+    }
+
+    .deals h3 {
+        font-size: 32px;
+    }
+    .deals p {
+        font-size: 18px;
+
+    }
+    .contact h2, {
+        font-size: 40px;
+
+    }
+    header .intro-text {
+        font-size: 2em;
+        width: 80%;
+    }
+
+    .white-bg {
+       width: 73%;
+    }
+
+    .input-items button, .input-items button:hover, .input-items button:focus, .input-items button:active {
+        font-size: 24px;
+        margin-top: -5px;
+        padding: 13px 35px;
+    }
+
+    #searchCourses{
+        width: 48%;
+    }
+
+    #searchLocations{
+        width: 46%;
+        border-right: 1px solid #ccc;
+        border-bottom: none;
+    }
+
+    .header-desc p {
+        width: 60%;
+        font-size: 18px;
+    }
+
+    .chinese-prov {
+        font-size: 18px;
+    }
+
+    .use-skillywilly {
+        font-size: 44px;
+        margin-bottom: 50px;
+    }
+}
+
+@media(min-width:992px) {
+
+    header .intro-text {
+        font-size: 2em;
+        width: 65%;
+    }
+
+    .white-bg {
+       width: 73%;
+    }
+
+    #searchCourses{
+        width: 60%;
+    }
+
+    #searchLocations{
+        width: 35%;
+    }
+}
+
+@media(min-width:1200px) {
+    form .row:first-child .floating-label-form-group {
+        border-top: 1px solid #ffd61a;
+    }
+}
